@@ -53,7 +53,7 @@ class community extends StatelessWidget {
               children: [
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 9,
+                  height: MediaQuery.of(context).size.height / 8,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
@@ -61,10 +61,13 @@ class community extends StatelessWidget {
                         return Container(
                           padding: const EdgeInsets.all(10),
                           child: const Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               CircleAvatar(
-                                  backgroundImage:
-                                      AssetImage('assets/Imag/Ellipse59.png')),
+                                radius: 25,
+                                backgroundImage:
+                                    AssetImage('assets/Imag/Ellipse59.png'),
+                              ),
                               Text("Abbey",
                                   style: TextStyle(
                                       color: Color(0xFF8E8E93),
@@ -151,7 +154,8 @@ class community extends StatelessWidget {
                                       const EdgeInsets.only(left: 5, right: 5),
                                   height:
                                       MediaQuery.of(context).size.height / 25,
-                                  width: MediaQuery.of(context).size.width / 5,
+                                  width:
+                                      MediaQuery.of(context).size.width / 5.5,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
                                       color: const Color(0xFFFFFFFF)),
@@ -201,6 +205,7 @@ class community extends StatelessWidget {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(15)),
                         child: Image.asset(
+                          fit: BoxFit.fill,
                           "assets/Imag/proportion169.png",
                         ),
                       ),

@@ -1,3 +1,4 @@
+import 'package:car/view/NewsDetails/NewsDetailsMainScrren/NewsDetails.dart';
 import 'package:car/view/SearchScreen/Brand/Brand.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -233,33 +234,38 @@ class SearchModel extends StatelessWidget {
                               height: MediaQuery.of(context).size.height / 15,
                             ),
                             //////////////////////////////////////////////////////////////////////
-                            Container(
-                              width: MediaQuery.of(context).size.width,
-                              padding: const EdgeInsets.all(10),
-                              child: const Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text("News",
-                                      style: TextStyle(
-                                          color: Color(0xFF1B1B1B),
-                                          fontSize: 20,
-                                          fontFamily: "Roboto")),
-                                  Row(
-                                    children: [
-                                      Text("More",
-                                          style: TextStyle(
-                                              color: Color(0xFF1DB854),
-                                              fontSize: 12,
-                                              fontFamily: "Roboto")),
-                                      Icon(
-                                        Icons.arrow_forward_ios,
-                                        color: Color(0xFF1DB854),
-                                        size: 10,
-                                      )
-                                    ],
-                                  )
-                                ],
+                            InkWell(
+                              onTap: () {
+                                Get.to(() => const NewsDetails());
+                              },
+                              child: Container(
+                                width: MediaQuery.of(context).size.width,
+                                padding: const EdgeInsets.all(10),
+                                child: const Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("News",
+                                        style: TextStyle(
+                                            color: Color(0xFF1B1B1B),
+                                            fontSize: 20,
+                                            fontFamily: "Roboto")),
+                                    Row(
+                                      children: [
+                                        Text("More",
+                                            style: TextStyle(
+                                                color: Color(0xFF1DB854),
+                                                fontSize: 12,
+                                                fontFamily: "Roboto")),
+                                        Icon(
+                                          Icons.arrow_forward_ios,
+                                          color: Color(0xFF1DB854),
+                                          size: 10,
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             SizedBox(
@@ -404,7 +410,7 @@ class SearchModel extends StatelessWidget {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 image: const DecorationImage(
-                                  image: AssetImage('assets/Imag/gg.png'),
+                                  image: AssetImage('assets/Imag/CarImag.png'),
                                   fit: BoxFit.cover,
                                 ),
                               ),

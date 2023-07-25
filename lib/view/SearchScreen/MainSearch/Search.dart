@@ -1,5 +1,5 @@
-import 'package:car/view/SearchScreen/MainSearch/Sales.dart';
-import 'package:car/view/SearchScreen/MainSearch/hot.dart';
+import 'package:car/view/SearchScreen/MainSearch/Pages/Sales.dart';
+import 'package:car/view/SearchScreen/MainSearch/Pages/hot.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

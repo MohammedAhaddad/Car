@@ -1,3 +1,4 @@
+import 'package:car/view/NewsDetails/NewsDetailsMainScrren/NewsDetails.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -357,7 +358,7 @@ class Home extends StatelessWidget {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              SvgPicture.asset("assets/Imag/w.svg"),
+                              SvgPicture.asset("assets/Imag/toyota-logo.svg"),
                               const Text("Toyota",
                                   style: TextStyle(
                                       color: Color(0xFF8E8E93),
@@ -454,31 +455,36 @@ class Home extends StatelessWidget {
                       );
                     }),
               ),
-              Container(
-                padding: const EdgeInsets.all(10),
-                child: const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("News",
-                        style: TextStyle(
-                            color: Color(0xFF1B1B1B),
-                            fontSize: 20,
-                            fontFamily: "Roboto")),
-                    Row(
-                      children: [
-                        Text("More",
-                            style: TextStyle(
-                                color: Color(0xFF1DB854),
-                                fontSize: 12,
-                                fontFamily: "Roboto")),
-                        Icon(
-                          Icons.arrow_forward_ios,
-                          color: Color(0xFF1DB854),
-                          size: 10,
-                        )
-                      ],
-                    )
-                  ],
+              InkWell(
+                onTap: () {
+                  Get.to(() => const NewsDetails());
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("News",
+                          style: TextStyle(
+                              color: Color(0xFF1B1B1B),
+                              fontSize: 20,
+                              fontFamily: "Roboto")),
+                      Row(
+                        children: [
+                          Text("More",
+                              style: TextStyle(
+                                  color: Color(0xFF1DB854),
+                                  fontSize: 12,
+                                  fontFamily: "Roboto")),
+                          Icon(
+                            Icons.arrow_forward_ios,
+                            color: Color(0xFF1DB854),
+                            size: 10,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
               SizedBox(

@@ -1,5 +1,7 @@
+import 'package:car/view/NewsDetails/NewsDetailsMainScrren/NewsDetails.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class hot extends StatelessWidget {
   const hot({Key? key}) : super(key: key);
@@ -59,32 +61,37 @@ class hot extends StatelessWidget {
                 );
               }),
         ),
-        Container(
-          width: MediaQuery.of(context).size.width,
-          padding: const EdgeInsets.all(10),
-          child: const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("News",
-                  style: TextStyle(
-                      color: Color(0xFF1B1B1B),
-                      fontSize: 20,
-                      fontFamily: "Roboto")),
-              Row(
-                children: [
-                  Text("More",
-                      style: TextStyle(
-                          color: Color(0xFF1DB854),
-                          fontSize: 12,
-                          fontFamily: "Roboto")),
-                  Icon(
-                    Icons.arrow_forward_ios,
-                    color: Color(0xFF1DB854),
-                    size: 10,
-                  )
-                ],
-              )
-            ],
+        InkWell(
+          onTap: () {
+            Get.to(() => const NewsDetails());
+          },
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            padding: const EdgeInsets.all(10),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("News",
+                    style: TextStyle(
+                        color: Color(0xFF1B1B1B),
+                        fontSize: 20,
+                        fontFamily: "Roboto")),
+                Row(
+                  children: [
+                    Text("More",
+                        style: TextStyle(
+                            color: Color(0xFF1DB854),
+                            fontSize: 12,
+                            fontFamily: "Roboto")),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: Color(0xFF1DB854),
+                      size: 10,
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         ),
         SizedBox(
