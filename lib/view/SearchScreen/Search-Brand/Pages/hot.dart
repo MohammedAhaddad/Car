@@ -1,4 +1,5 @@
 import 'package:car/view/NewsDetails/NewsDetailsMainScrren/NewsDetails.dart';
+import 'package:car/view/videoScreen/VideoScreen/video.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -9,6 +10,8 @@ class hot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      //  shrinkWrap: true,
+      // physics: NeverScrollableScrollPhysics(),
       children: [
         SizedBox(
           width: MediaQuery.of(context).size.width,
@@ -141,29 +144,34 @@ class hot extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text("Videos",
-                    style: TextStyle(
-                        color: Color(0xFF1B1B1B),
-                        fontSize: 20,
-                        fontFamily: "Roboto")),
-                Row(
-                  children: [
-                    Text("More",
-                        style: TextStyle(
-                            color: Color(0xFF1DB854),
-                            fontSize: 12,
-                            fontFamily: "Roboto")),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      color: Color(0xFF1DB854),
-                      size: 10,
-                    )
-                  ],
-                )
-              ],
+            InkWell(
+              onTap: () {
+                Get.to(() => video());
+              },
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Videos",
+                      style: TextStyle(
+                          color: Color(0xFF1B1B1B),
+                          fontSize: 20,
+                          fontFamily: "Roboto")),
+                  Row(
+                    children: [
+                      Text("More",
+                          style: TextStyle(
+                              color: Color(0xFF1DB854),
+                              fontSize: 12,
+                              fontFamily: "Roboto")),
+                      Icon(
+                        Icons.arrow_forward_ios,
+                        color: Color(0xFF1DB854),
+                        size: 10,
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width,

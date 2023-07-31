@@ -1,4 +1,6 @@
+import 'package:car/view/car/car-Details/carDetails.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class All extends StatelessWidget {
   const All({Key? key}) : super(key: key);
@@ -11,7 +13,9 @@ class All extends StatelessWidget {
         itemCount: 5,
         itemBuilder: (context, index) {
           return InkWell(
-            onTap: () {},
+            onTap: () {
+              Get.to(() => carDetails());
+            },
             child: Container(
               padding: EdgeInsets.all(10),
               margin: const EdgeInsets.only(top: 20, bottom: 3),

@@ -101,36 +101,36 @@ class NewsDetails extends StatelessWidget {
                                     fontFamily: "Roboto"))
                           ],
                         ),
-                        InkWell(
-                          onTap: () {},
-                          child: Container(
-                            margin: EdgeInsets.only(
-                                left: MediaQuery.of(context).size.width / 4.5),
-                            padding: const EdgeInsets.only(left: 5, right: 5),
-                            height: MediaQuery.of(context).size.height / 25,
-                            width: MediaQuery.of(context).size.width / 6,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: const Color(0xFFFFFFFF),
-                                border: Border.all(color: Color(0xFF1DB854))),
-                            child: const Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Icon(
-                                  Icons.add,
-                                  color: Color(0xFF1DB854),
-                                  size: 18,
-                                ),
-                                Text("Follow",
-                                    style: TextStyle(
-                                        color: Color(0xFF1DB854),
-                                        fontSize: 12,
-                                        fontFamily: "Roboto"))
-                              ],
-                            ),
-                          ),
-                        )
                       ],
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        margin: EdgeInsets.only(
+                            left: MediaQuery.of(context).size.width / 5),
+                        padding: const EdgeInsets.only(left: 5, right: 5),
+                        height: MediaQuery.of(context).size.height / 25,
+                        width: MediaQuery.of(context).size.width / 5.5,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: const Color(0xFFFFFFFF),
+                            border: Border.all(color: Color(0xFF1DB854))),
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(
+                              Icons.add,
+                              color: Color(0xFF1DB854),
+                              size: 18,
+                            ),
+                            Text("Follow",
+                                style: TextStyle(
+                                    color: Color(0xFF1DB854),
+                                    fontSize: 12,
+                                    fontFamily: "Roboto"))
+                          ],
+                        ),
+                      ),
                     )
                   ],
                 ),
@@ -191,7 +191,7 @@ class NewsDetails extends StatelessWidget {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("  Acura CDX",
+                                    Text("  Porsche-Taycan",
                                         style: TextStyle(
                                             color: Color(0xFF1B1B1B),
                                             fontSize: 14,
@@ -201,7 +201,7 @@ class NewsDetails extends StatelessWidget {
                                           MediaQuery.of(context).size.height /
                                               50,
                                     ),
-                                    Text("  Honda/Hatchback/\$26,670",
+                                    Text("   McLaren/Luxury",
                                         style: TextStyle(
                                             color: Color(0xFF8E8E93),
                                             fontSize: 10,
@@ -214,7 +214,7 @@ class NewsDetails extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Text("4532",
+                                Text("\$634,800",
                                     style: TextStyle(
                                         color: Color(0xFF1DB854),
                                         fontSize: 14,
@@ -223,7 +223,7 @@ class NewsDetails extends StatelessWidget {
                                   height:
                                       MediaQuery.of(context).size.height / 50,
                                 ),
-                                Text("\$634,800",
+                                Text("Price",
                                     style: TextStyle(
                                         color: Color(0xFF8E8E93),
                                         fontSize: 10,
@@ -257,7 +257,7 @@ class NewsDetails extends StatelessWidget {
                   children: [
                     Container(
                       padding: EdgeInsets.all(5),
-                      width: MediaQuery.of(context).size.width / 3,
+                      width: MediaQuery.of(context).size.width / 2.5,
                       height: MediaQuery.of(context).size.height / 20,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),

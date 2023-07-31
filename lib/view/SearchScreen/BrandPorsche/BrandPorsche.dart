@@ -2,6 +2,7 @@ import 'package:car/view/SearchScreen/BrandPorsche/Pages/All.dart';
 import 'package:car/view/SearchScreen/BrandPorsche/Pages/Luxury2.dart';
 import 'package:car/view/SearchScreen/BrandPorsche/Pages/SUV2.dart';
 import 'package:car/view/SearchScreen/BrandPorsche/Pages/Sedan2.dart';
+import 'package:car/view/car/car-Details/carDetails.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -61,47 +62,52 @@ class BrandPorsche extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, indx) {
-                return Container(
-                  margin: const EdgeInsets.all(10),
-                  width: MediaQuery.of(context).size.width / 2.5,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Color(0xffFFFFFF)),
-                  child: Stack(children: [
-                    Positioned(
-                        top: MediaQuery.of(context).size.width / 15,
-                        left: MediaQuery.of(context).size.width / 17,
-                        child: Image.asset("assets/Imag/car-picMazda.png")),
-                    Positioned(
-                        top: MediaQuery.of(context).size.height / 40,
-                        right: MediaQuery.of(context).size.width / 20,
-                        child: InkWell(
-                          child: SvgPicture.asset("assets/Imag/like.svg"),
-                          onTap: () {},
-                        )),
-                    Positioned(
-                        bottom: MediaQuery.of(context).size.height / 17,
-                        left: MediaQuery.of(context).size.width / 20,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Mazda Atenza",
-                                style: TextStyle(
-                                    color: Color(0xFF1B1B1B),
-                                    fontSize: 14,
-                                    fontFamily: "Roboto")),
-                            SizedBox(
-                              height: MediaQuery.of(context).size.height / 50,
-                            ),
-                            Text("\$330,000",
-                                style: TextStyle(
-                                    color: Color(0xFF1DB854),
-                                    fontSize: 12,
-                                    fontFamily: "Roboto")),
-                          ],
-                        )),
-                  ]),
+                return InkWell(
+                  onTap: () {
+                    Get.to(() => carDetails());
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.all(10),
+                    width: MediaQuery.of(context).size.width / 2.5,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Color(0xffFFFFFF)),
+                    child: Stack(children: [
+                      Positioned(
+                          top: MediaQuery.of(context).size.width / 15,
+                          left: MediaQuery.of(context).size.width / 17,
+                          child: Image.asset("assets/Imag/car-picMazda.png")),
+                      Positioned(
+                          top: MediaQuery.of(context).size.height / 40,
+                          right: MediaQuery.of(context).size.width / 20,
+                          child: InkWell(
+                            child: SvgPicture.asset("assets/Imag/like.svg"),
+                            onTap: () {},
+                          )),
+                      Positioned(
+                          bottom: MediaQuery.of(context).size.height / 17,
+                          left: MediaQuery.of(context).size.width / 20,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Mazda Atenza",
+                                  style: TextStyle(
+                                      color: Color(0xFF1B1B1B),
+                                      fontSize: 14,
+                                      fontFamily: "Roboto")),
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height / 50,
+                              ),
+                              Text("\$330,000",
+                                  style: TextStyle(
+                                      color: Color(0xFF1DB854),
+                                      fontSize: 12,
+                                      fontFamily: "Roboto")),
+                            ],
+                          )),
+                    ]),
+                  ),
                 );
               }),
         ),

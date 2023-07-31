@@ -199,36 +199,36 @@ class Review extends StatelessWidget {
                                     fontFamily: "Roboto"))
                           ],
                         ),
-                        InkWell(
-                          onTap: () {},
-                          child: Container(
-                            margin: EdgeInsets.only(
-                                left: MediaQuery.of(context).size.width / 4.5),
-                            padding: const EdgeInsets.only(left: 5, right: 5),
-                            height: MediaQuery.of(context).size.height / 25,
-                            width: MediaQuery.of(context).size.width / 6,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(15),
-                                color: const Color(0xFFFFFFFF),
-                                border: Border.all(color: Color(0xFF1DB854))),
-                            child: const Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Icon(
-                                  Icons.add,
-                                  color: Color(0xFF1DB854),
-                                  size: 18,
-                                ),
-                                Text("Follow",
-                                    style: TextStyle(
-                                        color: Color(0xFF1DB854),
-                                        fontSize: 12,
-                                        fontFamily: "Roboto"))
-                              ],
-                            ),
-                          ),
-                        )
                       ],
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        margin: EdgeInsets.only(
+                            left: MediaQuery.of(context).size.width / 5),
+                        padding: const EdgeInsets.only(left: 5, right: 5),
+                        height: MediaQuery.of(context).size.height / 25,
+                        width: MediaQuery.of(context).size.width / 5.5,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: const Color(0xFFFFFFFF),
+                            border: Border.all(color: Color(0xFF1DB854))),
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Icon(
+                              Icons.add,
+                              color: Color(0xFF1DB854),
+                              size: 18,
+                            ),
+                            Text("Follow",
+                                style: TextStyle(
+                                    color: Color(0xFF1DB854),
+                                    fontSize: 12,
+                                    fontFamily: "Roboto"))
+                          ],
+                        ),
+                      ),
                     )
                   ],
                 ),

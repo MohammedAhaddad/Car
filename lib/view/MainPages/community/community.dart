@@ -149,7 +149,7 @@ class community extends StatelessWidget {
                                 child: Container(
                                   margin: EdgeInsets.only(
                                       left: MediaQuery.of(context).size.width /
-                                          2.8),
+                                          3),
                                   padding:
                                       const EdgeInsets.only(left: 5, right: 5),
                                   height:
