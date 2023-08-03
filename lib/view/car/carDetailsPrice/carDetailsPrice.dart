@@ -1,4 +1,3 @@
-import 'package:car/MyCostm%20widget/MyButton.dart';
 import 'package:car/view/car/car-Details/pages/FAQ.dart';
 import 'package:car/view/car/car-Details/pages/Price.dart';
 import 'package:car/view/car/car-Details/pages/Reviews.dart';
@@ -12,15 +11,15 @@ class carDetailsPrice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFF1F2F3),
+        backgroundColor: const Color(0xFFF1F2F3),
         appBar: AppBar(
-            backgroundColor: Color(0xFFF1F2F3),
+            backgroundColor: const Color(0xFFF1F2F3),
             elevation: 0,
             leading: IconButton(
                 onPressed: () {
                   Get.back();
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back,
                   color: Color(0xFFAAB6C3),
                 )),
@@ -58,7 +57,7 @@ class carDetailsPrice extends StatelessWidget {
                         IconButton(
                             onPressed: () {},
                             icon: CircleAvatar(
-                              backgroundColor: Color(0xFFF1F2F3),
+                              backgroundColor: const Color(0xFFF1F2F3),
                               child: SvgPicture.asset(
                                 "assets/Imag/Shar2.svg",
                               ),
@@ -71,9 +70,9 @@ class carDetailsPrice extends StatelessWidget {
             ]),
         body: ListView(children: [
           Container(
-            margin: EdgeInsets.only(top: 20),
-            padding: EdgeInsets.all(10),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.only(top: 20),
+            padding: const EdgeInsets.all(5),
+            decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(25),
@@ -82,7 +81,7 @@ class carDetailsPrice extends StatelessWidget {
               Container(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
@@ -122,10 +121,10 @@ class carDetailsPrice extends StatelessWidget {
                               //  indicatorPadding: const EdgeInsets.all(10),
                             )),
                         Container(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height / 1.1,
-                          child: TabBarView(
+                          child: const TabBarView(
                             children: [
                               Price(),
                               Reviews(),
