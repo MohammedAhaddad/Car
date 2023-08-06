@@ -1,6 +1,8 @@
+import 'package:car/view/car/car-Details%E2%80%931/carDetails_1.dart';
 import 'package:car/view/car/car-Details/pages/FAQ.dart';
 import 'package:car/view/car/car-Details/pages/Price.dart';
 import 'package:car/view/car/car-Details/pages/Reviews.dart';
+import 'package:car/view/car/carDetailsPrice/carDetailsPrice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -83,6 +85,9 @@ class carDetails extends StatelessWidget {
               child: Row(
                 children: [
                   InkWell(
+                    onTap: () {
+                      Get.to(() => carDetails_1());
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                           image: const DecorationImage(
@@ -117,6 +122,9 @@ class carDetails extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 20,
                   ),
                   InkWell(
+                    onTap: () {
+                      Get.to(() => carDetails_1);
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                           image: const DecorationImage(
@@ -151,6 +159,9 @@ class carDetails extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 20,
                   ),
                   InkWell(
+                    onTap: () {
+                      Get.to(() => carDetails_1);
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                           image: const DecorationImage(
@@ -185,6 +196,9 @@ class carDetails extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 20,
                   ),
                   InkWell(
+                    onTap: () {
+                      Get.to(() => carDetails_1);
+                    },
                     child: Container(
                       decoration: BoxDecoration(
                           image: const DecorationImage(

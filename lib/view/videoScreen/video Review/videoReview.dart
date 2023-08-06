@@ -9,7 +9,7 @@ class videoReview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFF1F2F3),
+      backgroundColor: const Color(0xFFF1F2F3),
       body: ListView(children: [
         Stack(
           children: [
@@ -30,14 +30,14 @@ class videoReview extends StatelessWidget {
                       onPressed: () {
                         Get.back();
                       },
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back,
                         color: Color(0xFFAAB6C3),
                       )),
                   IconButton(
                       onPressed: () {},
                       icon: CircleAvatar(
-                        backgroundColor: Color(0xFF000000),
+                        backgroundColor: const Color(0xFF000000),
                         child: SvgPicture.asset(
                           "assets/Imag/Shar2.svg",
                         ),
@@ -48,9 +48,9 @@ class videoReview extends StatelessWidget {
           ],
         ),
         Container(
-          margin: EdgeInsets.all(10),
-          padding: EdgeInsets.all(10),
-          child: Text(
+          margin: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
+          child: const Text(
               "2019 Macan Facelift Launched; More Affordable Than Before",
               style: TextStyle(
                   color: Color(0xFF1B1B1B),
@@ -58,10 +58,10 @@ class videoReview extends StatelessWidget {
                   fontFamily: "Roboto")),
         ),
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(25), topRight: Radius.circular(25))),
@@ -69,14 +69,14 @@ class videoReview extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Reviews",
+                const Text("Reviews",
                     style: TextStyle(
                         color: Color(0xFF8E8E93),
                         fontSize: 14,
                         fontFamily: "Roboto")),
                 IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.close,
                       color: Color(0xFF8E8E93),
                     ))
@@ -84,18 +84,18 @@ class videoReview extends StatelessWidget {
             ),
             ListView.builder(
                 shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: 5,
                 itemBuilder: ((context, index) {
                   return Container(
-                    margin: EdgeInsets.only(top: 10),
+                    margin: const EdgeInsets.only(top: 10),
                     child: Column(children: [
                       Row(
                         children: [
                           CircleAvatar(
                             child: Image.asset("assets/Imag/Ellipse59.png"),
                           ),
-                          Row(
+                          const Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Text("  Uzair Arshad",
@@ -116,7 +116,7 @@ class videoReview extends StatelessWidget {
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Text("89  ",
+                              const Text("89  ",
                                   style: TextStyle(
                                       fontSize: 12,
                                       color: Color(0xFF8E8E93),
@@ -129,9 +129,8 @@ class videoReview extends StatelessWidget {
                           )
                         ],
                       ),
-                      Padding(
-                        padding:
-                            const EdgeInsets.only(left: 50, right: 50, top: 10),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 50, right: 50, top: 10),
                         child: Row(
                           children: [
                             Expanded(
@@ -144,8 +143,8 @@ class videoReview extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 50, top: 10),
+                      const Padding(
+                        padding: EdgeInsets.only(left: 50, top: 10),
                         child: Row(
                           children: [
                             Text("17 Reply",
@@ -164,16 +163,16 @@ class videoReview extends StatelessWidget {
       ]),
       bottomNavigationBar: Container(
         alignment: Alignment.topCenter,
-        padding: EdgeInsets.only(left: 15, right: 15),
+        padding: const EdgeInsets.only(left: 15, right: 15),
         height: MediaQuery.of(context).size.height / 8,
         width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             color: Color(0xFFF1F2F3),
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20))),
         child: Row(children: [
           Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             width: MediaQuery.of(context).size.width / 1.08,
             child: CupertinoSearchTextField(
                 placeholder: "  Say something…",
