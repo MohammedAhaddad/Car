@@ -76,7 +76,7 @@ class My_Location extends StatelessWidget {
                                     color: Colors.black,
                                     fontSize: 14,
                                     fontFamily: "Roboto-Light")),
-                            const Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
@@ -92,14 +92,19 @@ class My_Location extends StatelessWidget {
                                             fontFamily: "Roboto")),
                                   ],
                                 ),
-                                Row(
-                                  children: [
-                                    Text("Detect ",
-                                        style: TextStyle(
-                                            color: Color(0xFF1DB854),
-                                            fontSize: 14,
-                                            fontFamily: "Roboto"))
-                                  ],
+                                InkWell(
+                                  onTap: () {
+                                    Get.to(() => MainScrren());
+                                  },
+                                  child: Row(
+                                    children: [
+                                      Text("Detect ",
+                                          style: TextStyle(
+                                              color: Color(0xFF1DB854),
+                                              fontSize: 14,
+                                              fontFamily: "Roboto"))
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
@@ -123,9 +128,7 @@ class My_Location extends StatelessWidget {
                                     return Row(
                                       children: [
                                         InkWell(
-                                          onTap: () {
-                                            Get.to(() => MainScrren());
-                                          },
+                                          onTap: () {},
                                           child: Container(
                                             alignment: Alignment.center,
                                             width: MediaQuery.of(context)

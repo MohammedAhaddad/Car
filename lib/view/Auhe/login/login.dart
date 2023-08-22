@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:car/MyCostm%20widget/MyButton.dart';
+import 'package:car/controler/Authentication/GoogleAuth.dart';
 import 'package:car/view/Auhe/EnterVerrification/Verrification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -96,10 +97,6 @@ class login extends StatelessWidget {
                     backGroundColor: const Color(0xFF1DB854),
                     ontab: () {
                       Get.to(Verrification());
-                      // Navigator.of(context)
-                      //     .push(MaterialPageRoute(builder: (context) {
-                      //   return Verrification();
-                      // }));
                     },
                     text: "Continue",
                   )
@@ -137,11 +134,14 @@ class login extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      CircleAvatar(
-                        radius: MediaQuery.of(context).size.width / 15,
-                        backgroundColor: Color(0xFFF1F2F3),
-                        child: Center(
-                          child: InkWell(
+                      InkWell(
+                        onTap: () async {
+                          await GoogleAuth.signInGoogle();
+                        },
+                        child: CircleAvatar(
+                          radius: MediaQuery.of(context).size.width / 15,
+                          backgroundColor: Color(0xFFF1F2F3),
+                          child: Center(
                             child: SvgPicture.asset("assets/Imag/search.svg"),
                           ),
                         ),

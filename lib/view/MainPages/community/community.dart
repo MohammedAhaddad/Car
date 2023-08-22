@@ -46,7 +46,6 @@ class community extends StatelessWidget {
           ],
         ),
         body: ListView(
-          shrinkWrap: true,
           physics: const BouncingScrollPhysics(),
           children: [
             Row(
@@ -114,7 +113,7 @@ class community extends StatelessWidget {
             ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                itemCount: 20,
+                itemCount: 30,
                 itemBuilder: (context, index) {
                   return Container(
                     padding: const EdgeInsets.all(10),

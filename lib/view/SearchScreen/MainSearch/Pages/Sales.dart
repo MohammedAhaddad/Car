@@ -10,7 +10,7 @@ class Sales extends StatelessWidget {
     return ListView.builder(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
-        itemCount: 5,
+        itemCount: 10,
         itemBuilder: (context, index) {
           int indexx = index + 1;
           return InkWell(
