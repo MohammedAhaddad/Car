@@ -1,8 +1,9 @@
-import 'package:car/MyCostm%20widget/MyButton.dart';
 import 'package:car/view/car/car-Details%E2%80%931/carDetails_1.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+
+import '../../../MyCostm widget/MyButton.dart';
 
 class FAQ extends StatelessWidget {
   const FAQ({Key? key}) : super(key: key);

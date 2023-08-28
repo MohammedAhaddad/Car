@@ -1,5 +1,5 @@
-import 'package:car/MyCostm%20widget/MyButton.dart';
 import 'package:car/view/Auhe/name-email/full_name_email.dart';
+import 'package:car/view/MyCostm%20widget/MyButton.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';

@@ -1,4 +1,4 @@
-import 'package:car/MyCostm%20widget/MyButton.dart';
+import 'package:car/view/MyCostm%20widget/MyButton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';

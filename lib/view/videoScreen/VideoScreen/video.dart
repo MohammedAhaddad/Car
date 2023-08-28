@@ -1,24 +1,51 @@
+import 'dart:developer';
+
+import 'package:car/view/videoScreen/TheVideo.dart';
 import 'package:car/view/videoScreen/video%20Review/videoReview.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class video extends StatelessWidget {
-  const video({Key? key}) : super(key: key);
+  // final String videoId = 'OtXCGqlzrpM';
+
+  late YoutubePlayerController _youtubePlayerController;
+  String videoId = YoutubePlayer.convertUrlToId(
+          "https://www.youtube.com/watch?v=OtXCGqlzrpM") ??
+      "";
 
   @override
   Widget build(BuildContext context) {
+    @override
+    void initState() {
+      _youtubePlayerController = YoutubePlayerController(
+          initialVideoId: videoId!, flags: YoutubePlayerFlags(autoPlay: false));
+    }
+
     return Scaffold(
       body: ListView(children: [
         Stack(
           children: [
-            SizedBox(
+            Container(
               height: MediaQuery.of(context).size.height / 3,
               width: MediaQuery.of(context).size.width,
-              child: Image.asset(
-                "assets/Imag/192.png",
-                fit: BoxFit.fill,
+              child: YoutubePlayer(
+                controller: YoutubePlayerController(
+                    initialVideoId: videoId!,
+                    flags: YoutubePlayerFlags(autoPlay: false)),
+                showVideoProgressIndicator: true,
+                onReady: () {
+                  log("Ready");
+                },
+                bottomActions: [
+                  CurrentPosition(),
+                  ProgressBar(
+                    isExpanded: true,
+                  )
+                ],
+                progressIndicatorColor: Colors.blueAccent,
               ),
             ),
             Padding(

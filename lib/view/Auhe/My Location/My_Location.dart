@@ -2,6 +2,7 @@ import 'package:car/view/MainPages/MainScrren.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:intl_phone_field/intl_phone_field.dart';
 
 class My_Location extends StatelessWidget {
   const My_Location({Key? key}) : super(key: key);
@@ -155,6 +156,22 @@ class My_Location extends StatelessWidget {
                             ),
                             Row(
                               children: [
+                                // Container(
+                                //   width:
+                                //       MediaQuery.of(context).size.width / 1.2,
+                                //   child: IntlPhoneField(
+                                //       // showCountryFlag: true,
+                                //       // disableAutoFillHints: true,
+                                //       // obscureText: true,
+                                //       // readOnly: true,
+                                //       // showDropdownIcon: false,
+                                //       // autofocus: false,
+                                //       // disableLengthCheck: true,
+                                //       // showCursor: false
+
+                                //       ),
+                                // ),
+
                                 SizedBox(
                                   height:
                                       MediaQuery.of(context).size.height / 1.9,

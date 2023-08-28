@@ -12,12 +12,12 @@ class DiohomeScreenModle {
     Response response =
         await dio.get("https://cars-api.ameerabunada.com/api/v1/home");
     List res = response.data['data']['sliders'];
-    log("the respons Slaider  ***********$res");
+    //  log("the respons Slaider  ***********$res");
 
     List<sliders> car = res.map((e) {
       return sliders.fromJson(e);
     }).toList();
-    log(car.length.toString());
+    // log(car.length.toString());
     return car;
   }
 
@@ -25,12 +25,12 @@ class DiohomeScreenModle {
     Response response =
         await dio.get("https://cars-api.ameerabunada.com/api/v1/home");
     List res = response.data['data']['brands'];
-    log("the respons brands  ***********$res");
+    // log("the respons brands  ***********$res");
 
     List<brands> brand = res.map((e) {
       return brands.fromJson(e);
     }).toList();
-    log(brand.length.toString());
+    // log(brand.length.toString());
     return brand;
   }
 
@@ -38,12 +38,12 @@ class DiohomeScreenModle {
     Response response =
         await dio.get("https://cars-api.ameerabunada.com/api/v1/home");
     List res = response.data['data']['cars'];
-    log("the respons cars  ***********$res");
+    // log("the respons cars  ***********$res");
 
     List<cars> car = res.map((e) {
       return cars.fromJson(e);
     }).toList();
-    log(car.length.toString());
+    //  log(car.length.toString());
     return car;
   }
 }

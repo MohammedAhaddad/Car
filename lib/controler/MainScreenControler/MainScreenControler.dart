@@ -15,21 +15,21 @@ class MainScreenControler extends GetxController {
   Future<List<sliders>> getAllProdactofSlaider() async {
     Slaider = await DiohomeScreenModle.diohomeScreenModle.getAllCarSlaider();
     update();
-    print(Slaider.length);
+    // print(Slaider.length);
     return Slaider;
   }
 
   Future<List<brands>> getAllProdactofbrands() async {
     brand = await DiohomeScreenModle.diohomeScreenModle.getAllCarbrands();
     update();
-    print(brand.length);
+    // print(brand.length);
     return brand;
   }
 
   Future<List<cars>> getAllProdactofcars() async {
     car = await DiohomeScreenModle.diohomeScreenModle.getAllCars();
     update();
-    print(car.length);
+    //  print(car.length);
     return car;
   }
 }

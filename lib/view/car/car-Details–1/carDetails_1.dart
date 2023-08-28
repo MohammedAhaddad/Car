@@ -1,11 +1,10 @@
+import 'package:car/view/MyCostm%20widget/MyButton.dart';
 import 'package:car/view/car/CompareCars/CompareCars.dart';
 import 'package:car/view/car/car-Details%E2%80%931/Pages/Photos.dart';
 import 'package:car/view/car/car-Details%E2%80%931/Pages/Videos.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-
-import '../../../MyCostm widget/MyButton.dart';
 
 class carDetails_1 extends StatelessWidget {
   const carDetails_1({Key? key}) : super(key: key);

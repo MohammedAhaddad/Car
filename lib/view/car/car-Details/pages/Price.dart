@@ -1,5 +1,4 @@
-import 'package:car/MyCostm%20widget/MyButton.dart';
-import 'package:car/view/car/car-Details%E2%80%931/carDetails_1.dart';
+import '../../../MyCostm widget/MyButton.dart';
 import 'package:car/view/car/carDetailsPrice/carDetailsPrice.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
