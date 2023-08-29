@@ -1,4 +1,5 @@
 import 'package:car/view/MainPages/MainScrren.dart';
+import 'package:country_list/country_list.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -156,44 +157,21 @@ class My_Location extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                // Container(
-                                //   width:
-                                //       MediaQuery.of(context).size.width / 1.2,
-                                //   child: IntlPhoneField(
-                                //       // showCountryFlag: true,
-                                //       // disableAutoFillHints: true,
-                                //       // obscureText: true,
-                                //       // readOnly: true,
-                                //       // showDropdownIcon: false,
-                                //       // autofocus: false,
-                                //       // disableLengthCheck: true,
-                                //       // showCursor: false
-
-                                //       ),
-                                // ),
-
                                 SizedBox(
                                   height:
                                       MediaQuery.of(context).size.height / 1.9,
                                   width:
                                       MediaQuery.of(context).size.width / 1.12,
                                   child: ListView.builder(
-                                      itemCount: 50,
-                                      itemBuilder: (context, index) {
-                                        return Row(
-                                          children: [
-                                            InkWell(
-                                              onTap: () {},
-                                              child: const Text("Aledela",
-                                                  style: TextStyle(
-                                                      color: Color(0xFF8E8E93),
-                                                      fontSize: 16,
-                                                      fontFamily: "Roboto")),
-                                            ),
-                                            const SizedBox(
-                                              height: 60,
-                                            )
-                                          ],
+                                      itemCount: Countries.list.length,
+                                      itemBuilder: (context, position) {
+                                        Country country =
+                                            Countries.list[position];
+                                        return InkWell(
+                                          onTap: () {},
+                                          child: ListTile(
+                                            title: Text(country.name),
+                                          ),
                                         );
                                       }),
                                 )

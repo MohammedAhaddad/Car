@@ -118,11 +118,10 @@ class video extends StatelessWidget {
                 InkWell(
                   onTap: () {},
                   child: Container(
-                    margin: EdgeInsets.only(
-                        left: MediaQuery.of(context).size.width / 5),
+                    margin: EdgeInsets.all(10),
                     padding: const EdgeInsets.only(left: 5, right: 5),
                     height: MediaQuery.of(context).size.height / 25,
-                    width: MediaQuery.of(context).size.width / 6,
+                    width: MediaQuery.of(context).size.width / 5.5,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         color: const Color(0xFFFFFFFF),
