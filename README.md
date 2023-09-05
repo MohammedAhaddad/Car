@@ -2,15 +2,18 @@
 
 A new Flutter project.
 
-## Getting Started
+## online store Car 
 
-This project is a starting point for a Flutter application.
+This project was built  for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+An online store for selling cars and their accessories
+This project was built using Flutter
+It has been linked to the API and has been linked to Firebase for authentication via Google Gmail using email
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_20230905-144617](https://github.com/mohammed452/Car/assets/81010206/c2d161c6-2706-4beb-8c95-954cfe5f9590)
+![Screenshot_20230905-144703](https://github.com/mohammed452/Car/assets/81010206/895a1690-4820-4c3a-a7a1-0f8755178355)
+![Screenshot_20230905-144622](https://github.com/mohammed452/Car/assets/81010206/ab931371-fa39-4ed8-9290-2165ae7b360d)
+![Screenshot_20230905-144815](https://github.com/mohammed452/Car/assets/81010206/648fc2e3-c6d3-4837-94b4-0bad61da316e)
+![Screenshot_20230905-144643](https://github.com/mohammed452/Car/assets/81010206/e66e2cec-f62a-4ebd-8f82-ca683de25a63)
+![Screenshot_20230905-144904](https://github.com/mohammed452/Car/assets/81010206/26909d60-8685-4b44-89f0-935e5dcf4673)
